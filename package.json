@@ -1,0 +1,38 @@
+{
+  "name": "svelte-error-boundary",
+  "version": "1.0.1",
+  "description": "Fix error boundary Svelte 3 problem to prevent full app crash",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "format": "prettier --write 'src/**/*'",
+    "prepublishOnly": "npm run format & npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisstasyev/svelte-error-boundary.git"
+  },
+  "keywords": [
+    "svelte",
+    "error",
+    "boundary"
+  ],
+  "author": "Denis Stasyev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denisstasyev/svelte-error-boundary/issues"
+  },
+  "homepage": "https://github.com/denisstasyev/svelte-error-boundary#readme",
+  "devDependencies": {
+    "prettier": "latest",
+    "prettier-plugin-svelte": "latest",
+    "rollup": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-svelte": "latest",
+    "svelte": "latest"
+  }
+}
